@@ -56,6 +56,17 @@ OpenSkills replicates Claude Code's skills system with **100% compatibility**:
 
 ```bash
 npm i -g openskills
+
+或
+
+npm install
+
+npm run build
+
+npm pack
+
+npm i -g .\openskills-1.3.1.tgz
+
 ```
 
 ### 2. Install Skills

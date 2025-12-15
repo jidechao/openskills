@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+import pkg from '../package.json' assert { type: 'json' };
 import { listSkills } from './commands/list.js';
 import { installSkill } from './commands/install.js';
 import { readSkill } from './commands/read.js';
@@ -13,7 +14,7 @@ const program = new Command();
 program
   .name('openskills')
   .description('Universal skills loader for AI coding agents')
-  .version('1.2.1')
+  .version(pkg.version)
   .showHelpAfterError(false)
   .exitOverride((err) => {
     // Handle all commander errors gracefully (no stack traces)

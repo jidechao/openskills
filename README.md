@@ -7,8 +7,16 @@
 **The closest implementation matching Claude Code's skills system** — same prompt format, same marketplace, same folders, just using CLI instead of tools.
 
 ```bash
-npm i -g openskills
+npm install
+
+npm run build
+
+npm pack
+
+npm i -g .\openskills-1.3.1.tgz
+
 openskills install anthropics/skills
+
 openskills sync
 ```
 
@@ -55,9 +63,6 @@ OpenSkills replicates Claude Code's skills system with **100% compatibility**:
 ### 1. Install
 
 ```bash
-npm i -g openskills
-
-或
 
 npm install
 
